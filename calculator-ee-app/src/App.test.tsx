@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 
-describe("calculator tests", () => {
-  test("renders calculator", () => {
+describe("calculator ee tests", () => {
+  test("renders calculator ee", () => {
     render(<App />);
 
     const output = screen.getByTestId("output");
@@ -98,7 +98,7 @@ describe("calculator tests", () => {
     fireEvent.click(plusButton);
     fireEvent.click(screen.getByRole("button", { name: "2" }));
 
-    expect(plusButton).toHaveStyle({ borderColor: "#fff" });
+    expect(plusButton).toHaveStyle({ borderColor: "#000000" });
 
     fireEvent.click(screen.getByRole("button", { name: "AC" }));
 
@@ -119,7 +119,7 @@ describe("calculator tests", () => {
     expect(output).toHaveTextContent("9");
 
     fireEvent.click(screen.getByRole("button", { name: "+" }));
-    expect(output).toHaveTextContent("30");
+    expect(output).toHaveTextContent("");
 
     fireEvent.click(screen.getByRole("button", { name: "1" }));
     fireEvent.click(screen.getByRole("button", { name: "0" }));

@@ -42,4 +42,29 @@ If there’s any ambiguity, please add this in a section at the bottom of the RE
 ## Other Requirements
 
 Please add a section to the botton of this README which states any requirements and commands needed to run the code. Assume the reviewer is unfamiliar with your choice of framework and/or build tools and maybe using a different IDE.
-    
+
+
+## Setup instructions
+
+You will need to have node and yarn installed in your machine.
+### Installation
+
+
+```sh
+yarn install
+```
+
+
+### starting the app
+
+```sh
+yarn start
+```
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
+
+### Running tests
+```sh
+yarn test
+```
+
